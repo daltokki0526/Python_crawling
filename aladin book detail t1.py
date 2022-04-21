@@ -24,8 +24,8 @@ mans = bsObject.find("li", {"class":"Ere_sub2_title"}).getText()
 basic = bsObject.find("div", {"class":"conts_info_list1"}).getText()
 bunru = bsObject.find("ul", {"id":"ulCategory"}).getText()
 test = bsObject.find("div", {"class":"Ere_prod_mconts_box"}).getText()
-# summary = driver.find_element_by_xpath('//*[@id="Ere_prod_allwrap"]/div[9]/div[5]/div[3]')
+# summary = driver.find_element_by_xpath("//title")
 
-print(title, mans, basic, bunru, test, summary)
+print(title, mans, basic, bunru, test)
 
 
