@@ -10,6 +10,7 @@ import urllib.request
 import pyperclip #싸이트 방어 피하기
 import time #시간제어
 from selenium.webdriver.common.keys import Keys #버튼 컨트롤
+from selenium.webdriver.common.by import By
 
 url = "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=289083771"
 driver = webdriver.Chrome(ChromeDriverManager().install())
@@ -23,10 +24,6 @@ title = bsObject.find("a", {"class":"Ere_bo_title"}).getText()
 mans = bsObject.find("li", {"class":"Ere_sub2_title"}).getText()
 basic = bsObject.find("div", {"class":"conts_info_list1"}).getText()
 bunru = bsObject.find("ul", {"id":"ulCategory"}).getText()
-summary = driver.find_element_by_xpath('//*[@id="div_TOC_Short"]')
+print(title, mans, basic, bunru)
 
-# print(title, mans, basic, bunru, test, summary)
-
-print(summary)
-
-
+print([e.text for e in driver.find_elements(By.XPATH, '//*[@id="Ere_prod_allwrap"]/div[9]/div[6]')])
