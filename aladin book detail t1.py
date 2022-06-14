@@ -26,4 +26,3 @@ basic = bsObject.find("div", {"class":"conts_info_list1"}).getText()
 bunru = bsObject.find("ul", {"id":"ulCategory"}).getText()
 print(title, mans, basic, bunru)
 
-print([e.text for e in driver.find_elements(By.XPATH, '//*[@id="Ere_prod_allwrap"]/div[9]/div[6]')])
