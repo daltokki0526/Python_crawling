@@ -11,6 +11,6 @@ title = driver.find_element_by_class_name('Ere_bo_title').text
 title2 = driver.find_element_by_class_name('Ere_sub2_title').text
 won = driver.find_element_by_class_name('Ritem').text
 element = driver.find_element_by_class_name('Ere_prod_mconts_R').text
-driver.quit()
+driver.quit()100
 print(title,"\n",title2,"\n",element,"\n",won,"\n")
 
